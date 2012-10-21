@@ -1,0 +1,20 @@
+<b>Play</b> | <a href="record.html">Record</a>
+<br/>
+<script type="text/javascript" src="/jwplayer/jwplayer.js"></script>
+
+<div id="container">Loading the player ...</div>
+    <script type="text/javascript">
+        jwplayer("container").setup({
+        modes: [
+            {   type: "flash",
+                src: "/jwplayer/player.swf",
+                config: {
+                    bufferlength: 1,
+                    file: "mystream",
+                    streamer: "rtmp://localhost/myapp",
+                    provider: "rtmp",
+                }
+            }
+        ]
+});
+</script>
